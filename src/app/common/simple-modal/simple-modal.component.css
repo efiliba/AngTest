@@ -1,0 +1,4 @@
+.modal-body {
+  height: 20rem;
+  overflow-y: scroll;
+}
