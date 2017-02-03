@@ -6,10 +6,19 @@ import { Component } from '@angular/core';
     <div class="well">
       <h4>Nav Bar</h4>
       <nav>
-        <a routerLink=''>Home</a>
-        <a [routerLink]="['/test', 5]">Test</a>
+        <a routerLink='' routerLinkActive='active' [routerLinkActiveOptions]='{exact: true}'>Home</a>
+        <a [routerLink]="['/test', 5]" routerLinkActive='active'>Test</a>
       </nav>
     </div>
-  `
+  `,
+  styles: [`
+    a {
+      text-decoration: none;
+    }
+
+    a.active {
+      text-decoration: underline;
+    }
+  `]
 })
 export class NavBarComponent { }

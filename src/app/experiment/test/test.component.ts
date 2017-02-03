@@ -3,7 +3,6 @@ import { TOASTR_TOKEN } from '../../common/index';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  // selector: 'app-test',
   template: `
     <div class="well" modal-trigger="simple-modal">
       {{title}}
