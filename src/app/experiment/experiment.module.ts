@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TestComponent } from './test/test.component';
+import experimentRoutes from './experiment.routes';
 
 import { JQUERY_TOKEN, TOASTR_TOKEN, SimpleModalComponent, ModalTriggerDirective } from '../common/index';
 
@@ -9,7 +10,8 @@ let toastr: Toastr = window['toastr'];
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    experimentRoutes
   ],
   declarations: [
     ModalTriggerDirective,
@@ -21,4 +23,4 @@ let toastr: Toastr = window['toastr'];
     { provide: TOASTR_TOKEN, useValue: toastr }
   ]
 })
-export class ExperimentModule { }
+export default class ExperimentModule { }
