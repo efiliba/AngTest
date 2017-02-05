@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 import { Routing } from './routes';
+// import { ContactComponent } from './star-wars/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    // ListComponent
   ],
   imports: [
     BrowserModule,
