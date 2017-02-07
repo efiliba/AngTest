@@ -1,0 +1,21 @@
+<table>
+  <tr *ngRepeat="let row upTo rows">
+    <td *ngRepeat="let column upTo columns">
+      {{row * columns + column + 1}}
+    </td>
+  </tr>
+</table>
+
+<hr />
+
+<table>
+  <template ngRepeat let-row [ngRepeatUpTo]="rows">
+    <tr>
+      <template ngRepeat let-column [ngRepeatUpTo]="columns">
+        <td>
+          {{row * columns + column + 1}}
+        </td>
+      </template>
+    </tr>
+  </template>  
+</table>
