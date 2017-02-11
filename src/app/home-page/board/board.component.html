@@ -1,6 +1,6 @@
 <table>
-  <tr *ngRepeat="let row upTo rows">
-    <td *ngRepeat="let column upTo columns">
+  <tr *efRepeat="let row upTo rows">
+    <td *efRepeat="let column upTo columns">
       {{row * columns + column + 1}}
     </td>
   </tr>
@@ -9,9 +9,9 @@
 <hr />
 
 <table>
-  <template ngRepeat let-row [ngRepeatUpTo]="rows">
+  <template efRepeat let-row [efRepeatUpTo]="rows">
     <tr>
-      <template ngRepeat let-column [ngRepeatUpTo]="columns">
+      <template efRepeat let-column [efRepeatUpTo]="columns">
         <td>
           {{row * columns + column + 1}}
         </td>

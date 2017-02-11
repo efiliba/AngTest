@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { RepeatDirective } from './ng-repeat.directive';
+import { ListDirective } from './ef-list.directive';
 
-describe('NgRepeatDirective', () => {
+describe('EfListDirective', () => {
   it('should create an instance', () => {
-    const directive = new RepeatDirective();
+    const directive = new ListDirective();
     expect(directive).toBeTruthy();
   });
 });

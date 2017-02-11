@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RepeatDirective } from '../common/directives/ng-repeat.directive';
+import { RepeatDirective } from '../common/directives/ef-repeat.directive';
+import { ListDirective } from '../common/directives/ef-list.directive';
 import { HomePageComponent } from './home-page.component';
 import homePageRoutes from './home-page.routes';
 import { BoardComponent } from './board/board.component';
@@ -12,6 +13,7 @@ import { BoardComponent } from './board/board.component';
   ],
   declarations: [
     RepeatDirective,
+    ListDirective,
     HomePageComponent,
     BoardComponent
   ],
