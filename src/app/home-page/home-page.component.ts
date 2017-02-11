@@ -1,14 +1,14 @@
 import { Component, OnInit, AfterContentInit, ViewContainerRef, ViewChild } from '@angular/core';
-//import '../rxjs-operators';
+import '../rxjs-operators';
 import { Observable } from 'rxjs/Observable';
-//import { Observable, Subject } from 'rxjs/Rx';
-
-import 'rxjs';
+// import { Observable, Subject } from 'rxjs/Rx';
+// import 'rxjs';
 
 @Component({
   template: `
+    <template-storage></template-storage>
     <h1>Home Page</h1>
-    <h3>
+    <h3 *efSurround>
       <div *efList="item$ | async">Loading...</div>
     </h3>
     <template #templateRefName>
@@ -28,9 +28,6 @@ export class HomePageComponent implements OnInit {
   }
 
   ngAfterContentInit() {
-   // this.view.insert(this.template);
-    this.view.createEmbeddedView(this.template, {
-      // $implicit: 'message'
-    });
+    this.view.createEmbeddedView(this.template);
   }
 }
