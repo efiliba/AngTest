@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { TestComponent } from './test/test.component';
 import experimentRoutes from './experiment.routes';
 
-import { ConsoleService } from '../common/console.service';
-import { LogDebugger } from '../common/log-debugger.service';
+import { ConsoleService } from '../common/services/console.service';
+import { LogDebugger } from '../common/services/log-debugger.service';
 
 import { JQUERY_TOKEN, TOASTR_TOKEN, SimpleModalComponent, ModalTriggerDirective } from '../common/index';
 

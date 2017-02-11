@@ -2,7 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { TOASTR_TOKEN } from '../../common/index';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { LogDebugger } from '../../common/log-debugger.service';
+import { LogDebugger } from '../../common/services/log-debugger.service';
 
 import { Observable, Subject } from 'rxjs/Rx';
 import { setInterval } from "timers";

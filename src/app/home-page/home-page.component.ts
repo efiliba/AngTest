@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterContentInit, ViewContainerRef, ViewChild } from '@angular/core';
 //import '../rxjs-operators';
 import { Observable } from 'rxjs/Observable';
-// import { Observable, Subject } from 'rxjs/Rx';
+//import { Observable, Subject } from 'rxjs/Rx';
 
 import 'rxjs';
 
@@ -11,16 +11,15 @@ import 'rxjs';
     <h3>
       <div *efList="item$ | async">Loading...</div>
     </h3>
-    <template #foo>
-      <h2>{{item$ | async}}</h2>
+    <template #templateRefName>
+      <h3>Template Content - moved to end</h3>
     </template>
     <board columns=4 rows=3 isClosed="false"></board>
-    <!--h2>{{item$ | async}}</h2-->
   `,
 })
 export class HomePageComponent implements OnInit {
   item$: Observable<any>;
-  @ViewChild('foo') template;
+  @ViewChild('templateRefName') template;
 
   constructor(private view: ViewContainerRef) { }
 
@@ -29,7 +28,7 @@ export class HomePageComponent implements OnInit {
   }
 
   ngAfterContentInit() {
-    // this.view.insert(this.template);
+   // this.view.insert(this.template);
     this.view.createEmbeddedView(this.template, {
       // $implicit: 'message'
     });
