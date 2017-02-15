@@ -4,7 +4,8 @@ const routes: Routes = [
     { path: '', loadChildren: 'app/home-page/home-page.module' },
     { path: 'test', loadChildren: 'app/experiment/experiment.module' },
     { path: 'home', redirectTo: '/', pathMatch: 'full' },
-    { path: 'starwars', loadChildren: 'app/star-wars/star-wars.module' }
+    { path: 'starwars', loadChildren: 'app/star-wars/star-wars.module' },
+    { path: 'timer', loadChildren: 'app/timer/timer.module' }
 ];
 
 export const Routing = RouterModule.forRoot(routes);

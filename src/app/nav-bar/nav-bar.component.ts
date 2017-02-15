@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
         <a routerLink='' routerLinkActive='active' [routerLinkActiveOptions]='{exact: true}'>Home</a>
         <a [routerLink]="['/test', 5]" routerLinkActive='active'>Test</a>
         <a routerLink='/starwars' routerLinkActive='active'>Star wars</a>
+        <a routerLink='/timer' routerLinkActive='active'>Timer</a>
       </nav>
     </div>
   `,
